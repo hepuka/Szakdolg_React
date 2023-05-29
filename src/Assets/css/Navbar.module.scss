@@ -1,0 +1,22 @@
+.bloctabs {
+  display: flex;
+
+  .tabs {
+    padding: 20px;
+    background: #5c5e4c;
+    cursor: pointer;
+    width: 100%;
+    color: #f1f1f1;
+  }
+
+  .activetabs {
+    border-bottom: none;
+    color: #5c5e4c;
+    font-weight: bold;
+    background-color: white;
+  }
+
+  button {
+    border: none;
+  }
+}

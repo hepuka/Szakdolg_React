@@ -1,0 +1,36 @@
+.table {
+  padding: 5px;
+  width: 60%;
+  overflow-x: auto;
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+
+    tr {
+      border-bottom: 1px solid #ccc;
+    }
+
+    tr:nth-child(even) {
+      background-color: #eee;
+    }
+
+    thead {
+      border-top: 2px solid #5c5e4c;
+      border-bottom: 2px solid #5c5e4c;
+    }
+
+    th,
+    td {
+      vertical-align: top;
+      text-align: left;
+      padding: 8px;
+      &.icons {
+        > * {
+          margin-right: 5px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

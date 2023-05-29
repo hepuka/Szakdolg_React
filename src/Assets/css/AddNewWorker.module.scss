@@ -1,0 +1,31 @@
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 20px;
+  color: #5c5e4c;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 30px;
+  width: 400px;
+
+  input[type="text"],
+  input[type="email"],
+  select,
+  input[type="password"] {
+    padding: 0.5rem;
+    margin: 0.5rem auto;
+    width: 100%;
+    border: 1px solid #5c5e4c;
+    border-radius: 3px;
+    outline: none;
+  }
+}

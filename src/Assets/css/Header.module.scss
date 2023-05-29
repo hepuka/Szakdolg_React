@@ -1,0 +1,27 @@
+.headers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 45px;
+
+  h1 {
+    color: #5c5e4c;
+    font-weight: bold;
+  }
+
+  .headlinks {
+    display: flex;
+    gap: 30px;
+
+    p {
+      color: #5c5e4c;
+      font-weight: bold;
+    }
+
+    a {
+      text-decoration: none;
+      color: #5c5e4c;
+      font-weight: bold;
+    }
+  }
+}
