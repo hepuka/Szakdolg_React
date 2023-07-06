@@ -65,35 +65,38 @@ const Contact = ({ toggleState }) => {
           </div>
 
           <form ref={form} onSubmit={sendEmail}>
-            <label>Név</label>
-            <input
-              type="text"
-              name="user_name"
-              placeholder="Adja meg a nevét"
-              required
-            />
-            <label>Email</label>
-            <input
-              type="email"
-              name="user_email"
-              placeholder="Adja meg email címét"
-              required
-            />
-            <label>Tárgy</label>
-            <input
-              type="text"
-              name="subject"
-              placeholder="Üzenet tárgya"
-              required
-            />
-            <label>Üzenet</label>
-            <textarea
-              name="message"
-              cols="30"
-              rows="10"
-              placeholder="Küldje el nekünk észrevételét"
-            ></textarea>
-            <button className="btn">Küldés</button>
+            <fieldset>
+              <legend>Kérjük adja meg adatait</legend>
+              <label>Név</label>
+              <input
+                type="text"
+                name="user_name"
+                placeholder="Adja meg a nevét"
+                required
+              />
+              <label>Email</label>
+              <input
+                type="email"
+                name="user_email"
+                placeholder="Adja meg email címét"
+                required
+              />
+              <label>Tárgy</label>
+              <input
+                type="text"
+                name="subject"
+                placeholder="Üzenet tárgya"
+                required
+              />
+              <label>Üzenet</label>
+              <textarea
+                name="message"
+                cols="30"
+                rows="10"
+                placeholder="Küldje el nekünk észrevételét"
+              ></textarea>
+              <button className="btn">Küldés</button>
+            </fieldset>
           </form>
         </div>
       </div>

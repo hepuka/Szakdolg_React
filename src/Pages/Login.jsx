@@ -11,6 +11,7 @@ import { toast } from "react-toastify";
 const Login = () => {
   const [emailInput, setEmailInput] = useState();
   const [passwordInput, setPasswordInput] = useState();
+
   const navigate = useNavigate();
 
   const loginUser = (e) => {
@@ -19,7 +20,6 @@ const Login = () => {
     signInWithEmailAndPassword(auth, emailInput, passwordInput)
       .then((userCredential) => {
         //const user = userCredential.user;
-        toast.success("Sikeres bejelentkezés!");
         navigate("/workpage");
       })
       .catch((error) => {

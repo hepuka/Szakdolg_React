@@ -34,6 +34,7 @@ const Registration = ({ toggleState }) => {
         toast.error(error.message);
       });
   };
+
   return (
     <div className={toggleState === 2 ? "content  active-content" : "content"}>
       <div className="box-center">
@@ -46,6 +47,7 @@ const Registration = ({ toggleState }) => {
                 required
                 value={emailInput}
                 onChange={(e) => setEmailInput(e.target.value)}
+                autoComplete="off"
               />
               <input
                 type="password"
@@ -53,6 +55,7 @@ const Registration = ({ toggleState }) => {
                 required
                 value={passwordInput}
                 onChange={(e) => setPasswordInput(e.target.value)}
+                autocomplete="off"
               />
               <input
                 type="password"
@@ -60,6 +63,7 @@ const Registration = ({ toggleState }) => {
                 required
                 value={passwordConfirm}
                 onChange={(e) => setPasswordConfirm(e.target.value)}
+                autocomplete="off"
               />
 
               <button type="submit" className="btn">
